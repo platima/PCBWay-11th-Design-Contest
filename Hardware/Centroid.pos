@@ -1,0 +1,50 @@
+### Footprint positions - created on 2025-06-13T15:23:27+0800 ###
+### Printed by KiCad version 9.0.2
+## Unit = mm, Angle = deg.
+## Side : All
+# Ref     Val                  Package                                        PosX       PosY       Rot  Side
+C1        100nF                C_0603_1608Metric                          115.9110   -68.7940  135.0000  bottom
+C2        10uF                 C_0603_1608Metric                          130.7970   -86.8680    0.0000  bottom
+C4        100nF                C_0603_1608Metric                          130.8224   -84.0740    0.0000  bottom
+C5        1uF                  C_0603_1608Metric                          123.4440   -77.2492   90.0000  bottom
+C9        100nF                C_0603_1608Metric                          129.0320   -63.7410   90.0000  bottom
+C10       100nF                C_0603_1608Metric                          109.0800   -80.6450  180.0000  bottom
+C11       100nF                C_0603_1608Metric                          141.4380   -67.2230   45.0000  bottom
+C12       100nF                C_0603_1608Metric                          135.8900   -63.9950   90.0000  bottom
+C13       100nF                C_0603_1608Metric                          121.8800   -65.7460  135.0000  bottom
+C14       100nF                C_0603_1608Metric                          112.0270   -74.6760  180.0000  bottom
+H1        WAFER-PH2.0-2PWB     CONN-SMD_2P-P2.00_XUNPU_WAFER-PH2.0-2PWB   130.8100   -93.7260  180.0000  bottom
+IC1       STM8S003F3P6         SOP65P640X120-20N                          130.4460   -78.5570    0.0000  bottom
+J1        Conn_01x04           PinHeader_1x04_P2.54mm_Vertical            142.4940   -84.8360    0.0000  bottom
+R1        330Ohm               R_0805_2012Metric                          122.0572   -82.6668   45.0000  bottom
+R2        10kOhm               R_0805_2012Metric                          145.9230   -81.0025   90.0000  bottom
+R3        100kOhm              R_0603_1608Metric                          120.4590   -76.9620  180.0000  bottom
+D1        XL-2020RGBC-WS2812B  LED_XL-2020RGBC-WS2812B_Innerdot           112.4378   -83.8936    0.0000  top
+D2        XL-2020RGBC-WS2812B  LED_XL-2020RGBC-WS2812B_Innerdot           109.5168   -83.8936    0.0000  top
+D3        XL-2020RGBC-WS2812B  LED_XL-2020RGBC-WS2812B_Innerdot           112.6918   -80.9726  -10.0000  top
+D4        XL-2020RGBC-WS2812B  LED_XL-2020RGBC-WS2812B_Innerdot           109.7708   -80.4312  -10.0000  top
+D5        XL-2020RGBC-WS2812B  LED_XL-2020RGBC-WS2812B_Innerdot           113.4538   -78.1786  -20.0000  top
+D6        XL-2020RGBC-WS2812B  LED_XL-2020RGBC-WS2812B_Innerdot           110.6922   -77.1616  -20.0000  top
+D7        XL-2020RGBC-WS2812B  LED_XL-2020RGBC-WS2812B_Innerdot           114.7238   -75.5116  -30.0000  top
+D8        XL-2020RGBC-WS2812B  LED_XL-2020RGBC-WS2812B_Innerdot           112.1838   -73.9876  -30.0000  top
+D9        XL-2020RGBC-WS2812B  LED_XL-2020RGBC-WS2812B_Innerdot           116.4025   -73.0986  -40.0000  top
+D10       XL-2020RGBC-WS2812B  LED_XL-2020RGBC-WS2812B_Innerdot           114.0888   -71.1936  -40.0000  top
+D11       XL-2020RGBC-WS2812B  LED_XL-2020RGBC-WS2812B_Innerdot           118.4910   -71.0207  -50.0000  top
+D12       XL-2020RGBC-WS2812B  LED_XL-2020RGBC-WS2812B_Innerdot           116.5659   -68.7347  -50.0000  top
+D13       XL-2020RGBC-WS2812B  LED_XL-2020RGBC-WS2812B_Innerdot           120.9468   -69.2886  -60.0000  top
+D14       XL-2020RGBC-WS2812B  LED_XL-2020RGBC-WS2812B_Innerdot           119.4114   -66.7431  -60.0000  top
+D15       XL-2020RGBC-WS2812B  LED_XL-2020RGBC-WS2812B_Innerdot           123.6611   -68.0510  -70.0000  top
+D16       XL-2020RGBC-WS2812B  LED_XL-2020RGBC-WS2812B_Innerdot           122.6451   -65.3206  -70.0000  top
+D17       XL-2020RGBC-WS2812B  LED_XL-2020RGBC-WS2812B_Innerdot           126.5497   -67.2410  -80.0000  top
+D18       XL-2020RGBC-WS2812B  LED_XL-2020RGBC-WS2812B_Innerdot           126.0417   -64.3200  -80.0000  top
+D19       XL-2020RGBC-WS2812B  LED_XL-2020RGBC-WS2812B_Innerdot           129.5978   -66.9626  -90.0000  top
+D20       XL-2020RGBC-WS2812B  LED_XL-2020RGBC-WS2812B_Innerdot           129.5828   -63.9546  -90.0000  top
+D21       XL-2020RGBC-WS2812B  LED_XL-2020RGBC-WS2812B_Innerdot           132.6308   -67.2566  -100.0000  top
+D22       XL-2020RGBC-WS2812B  LED_XL-2020RGBC-WS2812B_Innerdot           133.1388   -64.3356  -100.0000  top
+D23       XL-2020RGBC-WS2812B  LED_XL-2020RGBC-WS2812B_Innerdot           135.5518   -68.0186  -110.0000  top
+D24       XL-2020RGBC-WS2812B  LED_XL-2020RGBC-WS2812B_Innerdot           136.5678   -65.2246  -110.0000  top
+D25       XL-2020RGBC-WS2812B  LED_XL-2020RGBC-WS2812B_Innerdot           138.2188   -69.2886  -120.0000  top
+D26       XL-2020RGBC-WS2812B  LED_XL-2020RGBC-WS2812B_Innerdot           139.7428   -66.7486  -120.0000  top
+D27       XL-2020RGBC-WS2812B  LED_XL-2020RGBC-WS2812B_Innerdot           140.6318   -71.0207  -130.0000  top
+D28       XL-2020RGBC-WS2812B  LED_XL-2020RGBC-WS2812B_Innerdot           142.5368   -68.7806  -130.0000  top
+## End

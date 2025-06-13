@@ -1,0 +1,11 @@
+"Id";"Designator";"Footprint";"Quantity";"Designation";"Supplier and ref";
+1;"D5,D23,D20,D18,D12,D25,D7,D1,D13,D6,D10,D3,D4,D26,D22,D17,D11,D9,D14,D2,D27,D19,D28,D21,D16,D15,D24,D8";"LED_XL-2020RGBC-WS2812B_Innerdot";28;"XL-2020RGBC-WS2812B";;;
+2;"H1";"CONN-SMD_2P-P2.00_XUNPU_WAFER-PH2.0-2PWB";1;"WAFER-PH2.0-2PWB";;;
+3;"C14,C1,C11,C10,C9,C12,C13,C4";"C_0603_1608Metric";8;"100nF";;;
+4;"IC1";"SOP65P640X120-20N";1;"STM8S003F3P6";;;
+5;"J1";"PinHeader_1x04_P2.54mm_Vertical";1;"Conn_01x04";;;
+6;"R2";"R_0805_2012Metric";1;"10kOhm";;;
+7;"R1";"R_0805_2012Metric";1;"330Ohm";;;
+8;"C2";"C_0603_1608Metric";1;"10uF";;;
+9;"C5";"C_0603_1608Metric";1;"1uF";;;
+10;"R3";"R_0603_1608Metric";1;"100kOhm";;;
