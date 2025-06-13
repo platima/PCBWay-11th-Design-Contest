@@ -9,9 +9,6 @@ A creative lightbulb-shaped badge featuring touch-activated LED animations, comb
 ![Innovation Lightbulb Badge](images/badge_front.jpg)
 *The completed Innovation Lightbulb Badge showcasing PCBWay's precision manufacturing*
 
-![Project Banner](images/banner.jpg)
-*Add your project photos here*
-
 ## 🌟 Features
 
 - **Touch Activation**: Cog/gear LEDs illuminate when touching the golden snake base
