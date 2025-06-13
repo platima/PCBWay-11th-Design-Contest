@@ -1,11 +1,10 @@
-"Id";"Designator";"Footprint";"Quantity";"Designation";"Supplier and ref";
-1;"D5,D23,D20,D18,D12,D25,D7,D1,D13,D6,D10,D3,D4,D26,D22,D17,D11,D9,D14,D2,D27,D19,D28,D21,D16,D15,D24,D8";"LED_XL-2020RGBC-WS2812B_Innerdot";28;"XL-2020RGBC-WS2812B";;;
-2;"H1";"CONN-SMD_2P-P2.00_XUNPU_WAFER-PH2.0-2PWB";1;"WAFER-PH2.0-2PWB";;;
-3;"C14,C1,C11,C10,C9,C12,C13,C4";"C_0603_1608Metric";8;"100nF";;;
-4;"IC1";"SOP65P640X120-20N";1;"STM8S003F3P6";;;
-5;"J1";"PinHeader_1x04_P2.54mm_Vertical";1;"Conn_01x04";;;
-6;"R2";"R_0805_2012Metric";1;"10kOhm";;;
-7;"R1";"R_0805_2012Metric";1;"330Ohm";;;
-8;"C2";"C_0603_1608Metric";1;"10uF";;;
-9;"C5";"C_0603_1608Metric";1;"1uF";;;
-10;"R3";"R_0603_1608Metric";1;"100kOhm";;;
+﻿Id,Designator,Footprint,Quantity,Designation,Purchase Page
+1,"D5,D23,D20,D18,D12,D25,D7,D1,D13,D6,D10,D3,D4,D26,D22,D17,D11,D9,D14,D2,D27,D19,D28,D21,D16,D15,D24,D8",LED_XL-2020RGBC-WS2812B_Innerdot,28,XL-2020RGBC-WS2812B,https://www.digikey.com.au/en/products/detail/xinglight/xl-2020rgbc-ws2812b/25672933
+2,H1,CONN-SMD_2P-P2.00_XUNPU_WAFER-PH2.0-2PWB,1,WAFER-PH2.0-2PWB,https://www.digikey.com.au/en/products/detail/jst-sales-america-inc/S2B-PH-SM4-TB/926655
+3,"C14,C1,C11,C10,C9,C12,C13,C4",C_0603_1608Metric,8,100nF,https://www.mouser.com/ProductDetail/KYOCERA-AVX/06033G104ZAT2A?qs=sGAEpiMZZMvsSlwiRhF8qtXiuYMmFthM1pl%2FshiZTZQ%3D
+4,IC1,SOP65P640X120-20N,1,STM8S003F3P6,https://www.mouser.com/ProductDetail/STMicroelectronics/STM8S003F3P6?qs=vV0pr1uq7fD%252BGii5YhjnYw%3D%3D
+6,R2,R_0805_2012Metric,1,10kOhm,https://www.mouser.com/ProductDetail/Royalohm/0805W8J0103T5E?qs=sGAEpiMZZMvdGkrng054txLI%2FDB4oIKD8Rb%252BK7fH7IGIfOBAjTUaXQ%3D%3D
+7,R1,R_0805_2012Metric,1,330Ohm,https://www.mouser.com/ProductDetail/Royalohm/0805W8J0331T5E?qs=sGAEpiMZZMvdGkrng054txLI%2FDB4oIKDUm%252BmZLbs6sKpzGYAJ82sbA%3D%3D
+8,C2,C_0603_1608Metric,1,10uF,https://www.mouser.com/ProductDetail/Samsung-Electro-Mechanics/CL10A106MQ8NNNC?qs=sGAEpiMZZMvsSlwiRhF8qlxW52pIu5FNbeqT8s0amCo%3D
+9,C5,C_0603_1608Metric,1,1uF,https://www.mouser.com/ProductDetail/TAIYO-YUDEN/LMK107B7105MA-T?qs=sGAEpiMZZMvsSlwiRhF8qgJCQaFFkNE%2Fbk4iNzdEMq0%3D
+10,R3,R_0603_1608Metric,1,100kOhm,https://www.mouser.com/ProductDetail/Royalohm/0603SAF1003T5E?qs=sGAEpiMZZMvdGkrng054txLI%2FDB4oIKDRdmb7qDYWxQN9bJPDkPKgQ%3D%3D

@@ -15,7 +15,6 @@ C13       100nF                C_0603_1608Metric                          121.88
 C14       100nF                C_0603_1608Metric                          112.0270   -74.6760  180.0000  bottom
 H1        WAFER-PH2.0-2PWB     CONN-SMD_2P-P2.00_XUNPU_WAFER-PH2.0-2PWB   130.8100   -93.7260  180.0000  bottom
 IC1       STM8S003F3P6         SOP65P640X120-20N                          130.4460   -78.5570    0.0000  bottom
-J1        Conn_01x04           PinHeader_1x04_P2.54mm_Vertical            142.4940   -84.8360    0.0000  bottom
 R1        330Ohm               R_0805_2012Metric                          122.0572   -82.6668   45.0000  bottom
 R2        10kOhm               R_0805_2012Metric                          145.9230   -81.0025   90.0000  bottom
 R3        100kOhm              R_0603_1608Metric                          120.4590   -76.9620  180.0000  bottom
