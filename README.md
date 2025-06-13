@@ -31,7 +31,7 @@ A creative lightbulb-shaped badge featuring touch-activated LED animations, comb
 
 ![Innovation Lightbulb Badge](Images/20250613_163038_2.jpg)
 
-*The completed Innovation Lightbulb Badge showcasing PCBWay's precision manufacturing*
+*The completed Innovation Lightbulb Badge showcasing PCBWay's precision manufacturing* [Animation video here](https://youtu.be/jnBDUs-5CoI)
 
 ## 🌟 Features
 
