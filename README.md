@@ -97,8 +97,8 @@ See [/Hardware/BOM.csv](/Hardware/BOM.csv) for complete bill of materials includ
 3. **Important**: Request UV printing for the artistic layers
 4. Optional: Upload [/Hardware/BOM.csv](/Hardware/BOM.csv) and [/Hardware/Centroid.pos](/Hardware/Centroid.pos) for assembly service
 
-##### Option 3 - Shared Project (Coming Soon)
-*PCBWay shared project link will be added after contest submission*
+##### Option 3 - Shared Project
+Order from the [PCBWay Shared Projects Page](https://www.pcbway.com/project/shareproject/Innovation_Lightbulb_Badge_Touch_Activated_LED_Controller_d56364aa.html)
 
 #### Soldering Process
 
@@ -490,8 +490,8 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - **Email**: [Contact through GitHub profile]
 
 ### Related Links
-- **PCBWay Contest**: [Official Contest Page] (Link to be added)
-- **PCBWay Shared Project**: [Direct Order Link] (Link to be added)
+- **PCBWay Contest**: [Official Contest Page](https://www.pcbway.com/blog/News/PCBWay_11th_Badge_Design_Contest_7ac30a70.html)
+- **PCBWay Shared Project**: [Direct Order Link](https://www.pcbway.com/project/shareproject/Innovation_Lightbulb_Badge_Touch_Activated_LED_Controller_d56364aa.html)
 - **STM8 Arduino Core**: [akashkapashia/stm8_arduino](https://github.com/akashkapashia/stm8_arduino)
 - **TinyWS2812 Library**: [ctxz/TinyWS2812](https://github.com/ctxz/TinyWS2812)
 
