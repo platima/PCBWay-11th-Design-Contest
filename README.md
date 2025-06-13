@@ -48,7 +48,7 @@ A creative lightbulb-shaped badge featuring touch-activated LED animations, comb
 
 #### Notes
 - LED capacitors are optional but recommended
-- The 0Ohm resistor on the back can be used to force-on without code changes
+- The 0 Ohm resistor (R4) on the back can be used to force-on without code changes
 
 ### Installation
 
