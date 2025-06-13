@@ -26,26 +26,38 @@ A creative lightbulb-shaped badge featuring touch-activated LED animations, comb
 ## 🔧 Hardware Requirements
 
 ### Components
-- STM8S microcontroller (STM8S003 or higher)
-- WS2812/WS2812B LED strip (32 LEDs default)
-- Analog input aka touch sensor
-- Power supply (3.3-5V, designed for LiPo)
-- PCB (custom design for PCBWay contest)
+- PCB _(custom design for PCBWay contest)_
+- STM8S MCU _(STM8S003 or higher)_
+- Other supporting components _(capacitors, resistors, LEDs)_
+- Power supply _(3.3-5V, designed for LiPo)_
 
 ## 🚀 Getting Started
 
 ### Prerequisites
-- Arduino IDE 2.0
-- ST-Link programmer
+- Arduino IDE 2.0 with [akashkapashia/stm8_arduino](https://github.com/akashkapashia/stm8_arduino/) added
+- ST-Link programmer _(Recommend ST-Link v2)_
+- Battery or power source _(Recommend 503035 or 602535 with protection circuit)_
 - This code
+
+### Assembly
+
+#### Soldering Order
+
+1. Apply solder paste and reflow the LEDs on the front first
+2. Apply solder paste and reflow the SMD components on the back next
+
+#### Notes
+- LED capacitors are optional but recommended
+- The 0Ohm resistor on the back can be used to force-on without code changes
 
 ### Installation
 
 1. **Clone or download the repository:**
    - TBC
+   - Open `firmware/Versin_3/Version_3.ino`
 
 2. **Install dependencies:**
-   - Ensure you have added https://github.com/akashkapashia/stm8_arduino/raw/master/package_sduino_stm8_index.json to your Arduino IDE boards URLs
+   - Ensure you have added `https://github.com/akashkapashia/stm8_arduino/raw/master/package_sduino_stm8_index.json` to your Arduino IDE boards URLs
 
 3. **Hardware setup:**
    - Connect your ST-Link programmer to your computer
@@ -53,7 +65,7 @@ A creative lightbulb-shaped badge featuring touch-activated LED animations, comb
    - Wire the PCB programming pads to the ST-Link
 
 4. **Upload the code:**
-   - Compile and upload `Version_3.ino` to your STM8 microcontroller
+   - Compile and upload the Arduino project to your STM8 microcontroller
 
 ## 🎨 How It Works
 
@@ -129,10 +141,10 @@ A creative lightbulb-shaped badge featuring touch-activated LED animations, comb
 
 The custom PCB design includes:
 - Compact STM8 microcontroller footprint
-- Touch sensor integration
-- LED strip connector
-- Power regulation circuit
-- Mounting holes and mechanical considerations
+- Gold snake as touch pads
+- Debug / programming pads
+- Space for battery to be attached _(Recommend velcro)_
+- Landyard loop
 
 *PCB files and schematics available in the `/hardware` directory*
 
