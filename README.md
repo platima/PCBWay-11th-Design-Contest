@@ -463,6 +463,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - **ctxz** for the excellent TinyWS2812 library that makes WS2812B control seamless
 - **STMicroelectronics** for the robust and affordable STM8 microcontroller platform
 - **Adafruit** for pioneering WS2812 integration and providing extensive documentation
+- **Wifey** for her patience with my stress, design and symbolism input, and feedback
 
 ### Community Support
 - **EEVblog Forum** for embedded systems design discussions
