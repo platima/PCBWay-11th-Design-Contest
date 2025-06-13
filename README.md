@@ -1,8 +1,6 @@
 # Innovation Lightbulb Badge - Touch-Activated LED Controller
 
-**🏆 PCBWay 11th Badge Design Contest Entry**
-
-*"11 Years of Innovation and Beyond with PCBWay"*
+**🏆 PCBWay 11th Badge Design Contest Entry** *"11 Years of Innovation and Beyond with PCBWay"*
 
 ## Table of Contents
 - [Overview](#overview)
@@ -57,7 +55,7 @@ A creative lightbulb-shaped badge featuring touch-activated LED animations, comb
 - **Touch Sensor**: Golden snake pads (built into PCB design)
 
 ### Additional Components
-See `/Hardware/BOM.csv` for complete bill of materials including:
+See [/Hardware/BOM.csv](/Hardware/BOM.csv) for complete bill of materials including:
 - Voltage regulators and power management ICs
 - Capacitors and resistors
 - Battery charging circuit components
@@ -95,20 +93,19 @@ See `/Hardware/BOM.csv` for complete bill of materials including:
 
 ##### Option 2 - Manual Gerber Upload
 1. Visit [PCBWay.com](https://www.pcbway.com)
-2. Upload `/Hardware/Gerbers.zip`
+2. Upload [/Hardware/Gerbers.zip](/Hardware/Gerbers.zip)
 3. **Important**: Request UV printing for the artistic layers
-4. Optional: Upload `/Hardware/BOM.csv` and `/Hardware/Centroid.pos` for assembly service
+4. Optional: Upload [/Hardware/BOM.csv](/Hardware/BOM.csv) and [/Hardware/Centroid.pos](/Hardware/Centroid.pos) for assembly service
 
-##### Option 3 - Shared Project (Coming Soon)
-*PCBWay shared project link will be added after contest submission*
+##### Option 3 - Shared Project
+Order from the [PCBWay Shared Projects Page](https://www.pcbway.com/project/shareproject/Innovation_Lightbulb_Badge_Touch_Activated_LED_Controller_d56364aa.html)
 
 #### Soldering Process
 
 **⚠️ Important Soldering Order:**
 1. **Front LEDs First**: Apply solder paste and reflow the 28 WS2812B LEDs on the front
 2. **Back SMD Components**: Apply solder paste and reflow all SMD components on the back
-3. **Edge Components**: Use hot air gun for edge-mounted components (USB, battery connector)
-4. **Through-hole**: Solder any remaining through-hole components
+3. **Edge Components**: Use hot air gun for edge-mounted components (decoupling capacitors, if used)
 
 #### Key Soldering Notes
 - **LED Capacitors**: Optional but recommended for stable operation
@@ -119,20 +116,24 @@ See `/Hardware/BOM.csv` for complete bill of materials including:
 
 #### Connection Diagram
 ```
-ST-Link v2    →    Badge Programming Pads
+ST-Link v2   →    Badge Programming Pads
 -----------         ----------------------
-3.3V/5V      →     5V  (marked with [])
+/5V          →     5V  (marked with [])
 GND          →     GND (marked with ())
-SWDIO        →     SWIM (marked with ())
+SWIM         →     SWIM (marked with ())
 NRST         →     RST (marked with ()))
 ```
 
 #### Programming Pad Layout
 ```
+Top of bulb shape
+
 ( ) RST    - Reset pin
 ( ) GND    - Ground
 ( ) SWIM   - Single Wire Interface Module
 [ ] 5V     - Power supply (square pad)
+
+Bottom of bulb / thread
 ```
 
 ### Installation
@@ -152,17 +153,15 @@ NRST         →     RST (marked with ()))
    - Search for "STM8" and install the package
 
 3. **Configure Board Settings:**
-   - Board: "STM8S003F3 Breakout Board"
-   - Upload Method: "STLink"
-   - Port: Select your ST-Link device
+   - Board: "STM8S103F3"
 
 4. **Upload Firmware:**
    - Open `Firmware/firmware.ino`
-   - Connect ST-Link to programming pads
+   - Connect ST-Link to programming pads (or hold in place)
    - Click Upload
 
 #### Method 2 - Pre-compiled Hex File (Quick Start)
-1. **Download and extract:** `firmware.ino.hex.zip`
+1. **Download and extract:** [firmware.ino.hex.zip](firmware.ino.hex.zip)
 2. **Flash using stm8flash:**
    ```bash
    stm8flash -c stlinkv2 -p stm8s003f3 -w firmware.ino.hex
@@ -178,7 +177,7 @@ The badge operates in two distinct modes based on touch sensor input:
 - **All LEDs Off**: Conserves battery power
 - **Touch Monitoring**: ADC continuously samples the golden snake pads
 - **Low Power**: Minimal current draw for extended battery life
-- **Wake-up Ready**: Instantly responds to touch detection
+- **Wake-up Ready**: Instantly responds to touch detection (150ms)
 
 #### 2. Active Mode (Animation Running)
 - **Touch Detected**: ADC reading exceeds 800mV threshold
@@ -187,7 +186,7 @@ The badge operates in two distinct modes based on touch sensor input:
 - **Continuous Operation**: Runs until touch is no longer detected
 
 #### 3. Touch Sensor Technology
-- **Capacitive Touch**: Uses body capacitance to detect finger presence
+- **Resistive Touch**: Uses skin conductivity to detect finger presence
 - **Golden Snake Pads**: Artistic PCB traces serve as touch electrodes
 - **ADC Monitoring**: STM8's built-in ADC on PD5 measures voltage changes
 - **Threshold Detection**: 800mV threshold provides reliable touch detection
@@ -276,10 +275,7 @@ The badge features 5 distinct animation modes that cycle automatically:
   - Typical use (intermittent): 8-12 hours
 
 ### Charging
-- **Method**: USB-C charging port (if populated)
-- **Current**: 500mA charging current
-- **Time**: 1-2 hours for full charge
-- **Indicator**: Charging LED (if populated)
+- Use external charger such as [LiPo Charger Module (Basic)](https://shop.plati.ma/products/lipo-charger-module)
 
 ## 🔨 PCB Design
 
@@ -291,10 +287,10 @@ The badge features 5 distinct animation modes that cycle automatically:
 - **Functional Art**: UV printing demonstrates PCBWay's advanced capabilities
 
 ### Technical Specifications
-- **Dimensions**: [Add dimensions from KiCad files]
+- **Dimensions**: 58.74mm wide, 98.5mm tall
 - **Layers**: 2-layer PCB with artistic copper pours
-- **Thickness**: 1.6mm standard PCB thickness
-- **Surface Finish**: HASL or ENIG for golden appearance
+- **Thickness**: 1.2-1.6mm standard PCB thickness (FR4)
+- **Surface Finish**: ENIG for golden appearance, else HASL
 - **UV Printing**: Multi-color artwork on solder mask
 
 ### Programming Interface
@@ -316,6 +312,9 @@ The badge features 5 distinct animation modes that cycle automatically:
 - **Storage Temperature**: -20°C to +80°C
 - **Humidity**: 0-95% non-condensing
 - **Vibration**: Suitable for badge/wearable use
+
+### Recommendations
+- **Battery**: Use velcro or similar adhesive to attach LiPo to back of PCB 
 
 ## 🛠️ Troubleshooting
 
@@ -387,13 +386,6 @@ The badge features 5 distinct animation modes that cycle automatically:
 
 ## 🚧 Future Enhancements
 
-### Planned Features
-- [ ] **Accelerometer Integration**: Tilt-activated animations
-- [ ] **Wireless Connectivity**: Bluetooth LE for remote control
-- [ ] **Sound Reactive**: Microphone input for music-synchronized patterns
-- [ ] **Multi-Badge Sync**: Coordinated animations across multiple badges
-- [ ] **Mobile App**: Smartphone control and pattern customization
-
 ### Community Contributions
 - [ ] **Pattern Library**: User-submitted animation patterns
 - [ ] **3D Printed Case**: Protective housing with lanyard attachment
@@ -403,8 +395,6 @@ The badge features 5 distinct animation modes that cycle automatically:
 
 ### Advanced Features
 - [ ] **Battery Monitoring**: Visual battery level indication
-- [ ] **Temperature Sensing**: Environmental response patterns
-- [ ] **Memory Patterns**: Store and recall custom animations
 - [ ] **Event Modes**: Special patterns for holidays and events
 - [ ] **Diagnostic Mode**: Self-test and troubleshooting features
 
@@ -500,8 +490,8 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - **Email**: [Contact through GitHub profile]
 
 ### Related Links
-- **PCBWay Contest**: [Official Contest Page] (Link to be added)
-- **PCBWay Shared Project**: [Direct Order Link] (Link to be added)
+- **PCBWay Contest**: [Official Contest Page](https://www.pcbway.com/blog/News/PCBWay_11th_Badge_Design_Contest_7ac30a70.html)
+- **PCBWay Shared Project**: [Direct Order Link](https://www.pcbway.com/project/shareproject/Innovation_Lightbulb_Badge_Touch_Activated_LED_Controller_d56364aa.html)
 - **STM8 Arduino Core**: [akashkapashia/stm8_arduino](https://github.com/akashkapashia/stm8_arduino)
 - **TinyWS2812 Library**: [ctxz/TinyWS2812](https://github.com/ctxz/TinyWS2812)
 
