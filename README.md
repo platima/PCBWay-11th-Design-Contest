@@ -1,8 +1,6 @@
 # Innovation Lightbulb Badge - Touch-Activated LED Controller
 
-**🏆 PCBWay 11th Badge Design Contest Entry**
-
-*"11 Years of Innovation and Beyond with PCBWay"*
+**🏆 PCBWay 11th Badge Design Contest Entry** *"11 Years of Innovation and Beyond with PCBWay"*
 
 ## Table of Contents
 - [Overview](#overview)
