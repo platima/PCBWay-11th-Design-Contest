@@ -37,7 +37,7 @@ A creative lightbulb-shaped badge featuring touch-activated LED animations, comb
 - Arduino IDE 2.0 with [akashkapashia/stm8_arduino](https://github.com/akashkapashia/stm8_arduino/) added
 - ST-Link programmer _(Recommend ST-Link v2)_
 - Battery or power source _(Recommend 503035 or 602535 with protection circuit)_
-- This code
+- This code (or `firmware.ino.hex.zip` which you can just unzip and flash with `stm8flash`)
 
 ### Assembly
 
@@ -46,6 +46,12 @@ A creative lightbulb-shaped badge featuring touch-activated LED animations, comb
 1. Apply solder paste and reflow the LEDs on the front first
 2. Apply solder paste and reflow the SMD components on the back next
 
+#### Programming pads
+( ) RST
+( ) GND
+( ) SWIM
+[ ] 5V
+
 #### Notes
 - LED capacitors are optional but recommended
 - The 0 Ohm resistor (R4) on the back can be used to force-on without code changes
@@ -53,15 +59,15 @@ A creative lightbulb-shaped badge featuring touch-activated LED animations, comb
 ### Installation
 
 1. **Clone or download the repository:**
-   - TBC
+   - `git clone https://github.com/platima/PCBWay-11th-Design-Contest.git`
    - Open `firmware/firmware.ino`
 
 2. **Install dependencies:**
    - Ensure you have added `https://github.com/akashkapashia/stm8_arduino/raw/master/package_sduino_stm8_index.json` to your Arduino IDE boards URLs
+   - Install any required drivers
 
 3. **Hardware setup:**
    - Connect your ST-Link programmer to your computer
-   - Install any required drivers
    - Wire the PCB programming pads to the ST-Link
 
 4. **Upload the code:**
@@ -103,7 +109,7 @@ A creative lightbulb-shaped badge featuring touch-activated LED animations, comb
 
 ### Touch Sensitivity
 ```c
-#define TOUCH_THRESHOLD 1    // ADC threshold for touch detection
+#define TOUCH_THRESHOLD_MV 800 // ADC threshold for touch detection
 ```
 
 ### LED Strip Configuration
@@ -128,14 +134,6 @@ A creative lightbulb-shaped badge featuring touch-activated LED animations, comb
    - Creates "teeth" of colored LEDs
    - Each tooth cycles through rainbow colors
    - Pattern shifts smoothly along the strip
-
-## 📊 Power Consumption
-
-| Mode | Current Draw | Description |
-|------|-------------|-------------|
-| Active | ~150mA | LEDs on, animation running |
-| Standby | ~5mA | MCU in halt mode, LEDs off |
-| Sleep | ~1μA | Deep sleep (if implemented) |
 
 ## 🔨 PCB Design
 
