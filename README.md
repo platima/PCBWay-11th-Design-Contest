@@ -54,7 +54,7 @@ A creative lightbulb-shaped badge featuring touch-activated LED animations, comb
 
 1. **Clone or download the repository:**
    - TBC
-   - Open `firmware/Versin_3/Version_3.ino`
+   - Open `firmware/firmware.ino`
 
 2. **Install dependencies:**
    - Ensure you have added `https://github.com/akashkapashia/stm8_arduino/raw/master/package_sduino_stm8_index.json` to your Arduino IDE boards URLs
