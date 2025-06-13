@@ -29,7 +29,7 @@
 
 A creative lightbulb-shaped badge featuring touch-activated LED animations, combining PCB art with functional electronics. The badge celebrates PCBWay's 11-year journey with an interactive cog/gear LED pattern that comes to life when you touch the golden snake base.
 
-![Innovation Lightbulb Badge](Images/Render.png)
+![Innovation Lightbulb Badge](Images/20250613_163038_2.jpg)
 
 *The completed Innovation Lightbulb Badge showcasing PCBWay's precision manufacturing*
 
