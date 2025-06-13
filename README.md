@@ -27,8 +27,8 @@ A creative lightbulb-shaped badge featuring touch-activated LED animations, comb
 
 ### Components
 - PCB _(custom design for PCBWay contest)_
-- STM8S MCU _(STM8S003 or higher)_
-- Other supporting components _(capacitors, resistors, LEDs)_
+- STM8S TSSOP20 MCU _(STM8S003 or higher)_
+- Other supporting components _(see `/hardware/BOM.csv`)_
 - Power supply _(3.3-5V, designed for LiPo)_
 
 ## 🚀 Getting Started
