@@ -9,9 +9,6 @@ A creative lightbulb-shaped badge featuring touch-activated LED animations, comb
 ![Innovation Lightbulb Badge](images/badge_front.jpg)
 *The completed Innovation Lightbulb Badge showcasing PCBWay's precision manufacturing*
 
-![Project Banner](images/banner.jpg)
-*Add your project photos here*
-
 ## 🌟 Features
 
 - **Touch Activation**: Cog/gear LEDs illuminate when touching the golden snake base
@@ -26,34 +23,52 @@ A creative lightbulb-shaped badge featuring touch-activated LED animations, comb
 ## 🔧 Hardware Requirements
 
 ### Components
-- STM8S microcontroller (STM8S003 or higher)
-- WS2812/WS2812B LED strip (32 LEDs default)
-- Analog input aka touch sensor
-- Power supply (3.3-5V, designed for LiPo)
-- PCB (custom design for PCBWay contest)
+- PCB _(custom design for PCBWay contest)_
+- STM8S TSSOP20 MCU _(STM8S003 or higher)_
+- Other supporting components _(see `/hardware/BOM.csv`)_
+- Power supply _(3.3-5V, designed for LiPo)_
 
 ## 🚀 Getting Started
 
 ### Prerequisites
-- Arduino IDE 2.0
-- ST-Link programmer
-- This code
+- Arduino IDE 2.0 with [akashkapashia/stm8_arduino](https://github.com/akashkapashia/stm8_arduino/) added
+- ST-Link programmer _(Recommend ST-Link v2)_
+- Battery or power source _(Recommend 503035 or 602535 with protection circuit)_
+- This code (or `firmware.ino.hex.zip` which you can just unzip and flash with `stm8flash`)
+
+### Assembly
+
+#### Soldering Order
+
+1. Apply solder paste and reflow the LEDs on the front first
+2. Apply solder paste and reflow the SMD components on the back next
+
+#### Programming pads
+( ) RST
+( ) GND
+( ) SWIM
+[ ] 5V
+
+#### Notes
+- LED capacitors are optional but recommended
+- The 0 Ohm resistor (R4) on the back can be used to force-on without code changes
 
 ### Installation
 
 1. **Clone or download the repository:**
-   - TBC
+   - `git clone https://github.com/platima/PCBWay-11th-Design-Contest.git`
+   - Open `firmware/firmware.ino`
 
 2. **Install dependencies:**
-   - Ensure you have added https://github.com/akashkapashia/stm8_arduino/raw/master/package_sduino_stm8_index.json to your Arduino IDE boards URLs
+   - Ensure you have added `https://github.com/akashkapashia/stm8_arduino/raw/master/package_sduino_stm8_index.json` to your Arduino IDE boards URLs
+   - Install any required drivers
 
 3. **Hardware setup:**
    - Connect your ST-Link programmer to your computer
-   - Install any required drivers
    - Wire the PCB programming pads to the ST-Link
 
 4. **Upload the code:**
-   - Compile and upload `Version_3.ino` to your STM8 microcontroller
+   - Compile and upload the Arduino project to your STM8 microcontroller
 
 ## 🎨 How It Works
 
@@ -91,7 +106,7 @@ A creative lightbulb-shaped badge featuring touch-activated LED animations, comb
 
 ### Touch Sensitivity
 ```c
-#define TOUCH_THRESHOLD 1    // ADC threshold for touch detection
+#define TOUCH_THRESHOLD_MV 800 // ADC threshold for touch detection
 ```
 
 ### LED Strip Configuration
@@ -117,22 +132,14 @@ A creative lightbulb-shaped badge featuring touch-activated LED animations, comb
    - Each tooth cycles through rainbow colors
    - Pattern shifts smoothly along the strip
 
-## 📊 Power Consumption
-
-| Mode | Current Draw | Description |
-|------|-------------|-------------|
-| Active | ~150mA | LEDs on, animation running |
-| Standby | ~5mA | MCU in halt mode, LEDs off |
-| Sleep | ~1μA | Deep sleep (if implemented) |
-
 ## 🔨 PCB Design
 
 The custom PCB design includes:
 - Compact STM8 microcontroller footprint
-- Touch sensor integration
-- LED strip connector
-- Power regulation circuit
-- Mounting holes and mechanical considerations
+- Gold snake as touch pads
+- Debug / programming pads
+- Space for battery to be attached _(Recommend velcro)_
+- Landyard loop
 
 *PCB files and schematics available in the `/hardware` directory*
 
