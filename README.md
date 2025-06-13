@@ -25,7 +25,7 @@ A creative lightbulb-shaped badge featuring touch-activated LED animations, comb
 ### Components
 - PCB _(custom design for PCBWay contest)_
 - STM8S TSSOP20 MCU _(STM8S003 or higher)_
-- Other supporting components _(see `/hardware/BOM.csv`)_
+- Other supporting components _(see `/Hardware/BOM.csv`)_
 - Power supply _(3.3-5V, designed for LiPo)_
 
 ## 🚀 Getting Started
@@ -38,10 +38,29 @@ A creative lightbulb-shaped badge featuring touch-activated LED animations, comb
 
 ### Assembly
 
-#### Soldering Order
+#### PCBWay Ordering
+##### Option 1 - From KiCad
+1. Download KiCad files
+2. Open in KiCad 9 or later
+3. Order via PCBWay plugin
 
+TODO Add PCBWay referral link
+
+##### Option 2 - Upload Gerber to PCBWay
+1. Go to (INSERT PCBWAY URL)
+2. Upload `Hardware/Gerbers.zip`
+3. Optionally upload `Hardware/BOM.CSV` and `Hardware/centroid.pos` if you want assembly
+4. Order
+
+##### Option 3 - From PCBWay Shared Projects
+1. Go to (INSERT URL)
+2. Hit 'Order'
+3. Enjoy
+
+#### Soldering Order
 1. Apply solder paste and reflow the LEDs on the front first
 2. Apply solder paste and reflow the SMD components on the back next
+3. Use hot air reflow gun as required for edge components (dependant on reflow board size / type etc)
 
 #### Programming pads
 ( ) RST
@@ -57,7 +76,7 @@ A creative lightbulb-shaped badge featuring touch-activated LED animations, comb
 
 1. **Clone or download the repository:**
    - `git clone https://github.com/platima/PCBWay-11th-Design-Contest.git`
-   - Open `firmware/firmware.ino`
+   - Open `Firmware/firmware.ino`
 
 2. **Install dependencies:**
    - Ensure you have added `https://github.com/akashkapashia/stm8_arduino/raw/master/package_sduino_stm8_index.json` to your Arduino IDE boards URLs
