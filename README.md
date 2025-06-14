@@ -231,7 +231,7 @@ The badge operates in two distinct modes based on touch sensor input:
 
 The badge features 5 distinct animation modes that cycle automatically:
 
-<img src="https://github.com/platima/PCBWay-11th-Design-Contest/blob/main/Images/20250613%20163123%20NoSound%20720p.gif?raw=true" />
+<img src="https://github.com/platima/PCBWay-11th-Design-Contest/blob/main/Images/20250613%20163123%20NoSound%20467p5.gif?raw=true" />
 
 ### 1. Rainbow Mode (`MODE_RAINBOW`) - Default
 - **Colors**: Full spectrum rainbow cycling
