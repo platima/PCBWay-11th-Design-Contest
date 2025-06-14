@@ -1,6 +1,6 @@
 # Innovation Lightbulb Badge - Touch-Activated RGB LEDs
 
-**🏆 My entry for the PCBWay 11th Badge Design Contest:** *"11 Years of Innovation and Beyond with PCBWay"*
+**🏆 My entry for the PCBWay 11th Design Contest:** *"11 Years of Innovation and Beyond with PCBWay"*
 <img align="right" src="https://visitor-badge.laobi.icu/badge?page_id=platima.pcbway11th" height="20" />
 
 ## Table of Contents
