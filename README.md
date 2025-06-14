@@ -1,6 +1,7 @@
-# Innovation Lightbulb Badge - Touch-Activated LED Controller
+# Innovation Lightbulb Badge - Touch-Activated RGB LEDs
 
-**🏆 PCBWay 11th Badge Design Contest Entry** *"11 Years of Innovation and Beyond with PCBWay"*
+**🏆 My entry for the PCBWay 11th Badge Design Contest:** *"11 Years of Innovation and Beyond with PCBWay"*
+<img align="right" src="https://visitor-badge.laobi.icu/badge?page_id=platima.pcbway11th" height="20" />
 
 ## Table of Contents
 - [Overview](#overview)
@@ -29,9 +30,9 @@
 
 A creative lightbulb-shaped badge featuring touch-activated LED animations, combining PCB art with functional electronics. The badge celebrates PCBWay's 11-year journey with an interactive cog/gear LED pattern that comes to life when you touch the golden snake base.
 
-![Innovation Lightbulb Badge](Images/Render.png)
+![Innovation Lightbulb Badge](Images/20250613_163038_2.jpg)
 
-*The completed Innovation Lightbulb Badge showcasing PCBWay's precision manufacturing*
+*The completed Innovation Lightbulb Badge showcasing PCBWay's precision manufacturing. [Animation video here](https://youtu.be/jnBDUs-5CoI)*
 
 ## 🌟 Features
 
@@ -462,6 +463,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - **ctxz** for the excellent TinyWS2812 library that makes WS2812B control seamless
 - **STMicroelectronics** for the robust and affordable STM8 microcontroller platform
 - **Adafruit** for pioneering WS2812 integration and providing extensive documentation
+- **Wifey** for her patience with my stress, design and symbolism input, and feedback
 
 ### Community Support
 - **EEVblog Forum** for embedded systems design discussions
@@ -502,3 +504,5 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 *Showcasing innovative PCB design with practical embedded systems implementation*
 
 **🐍 Year of the Wood Snake 2025** - *Celebrating innovation, creativity, and the maker spirit*
+
+#Platima #NeoPixel #WS2812 #STM8 #Maker #Arduino #PCBWay #PCBWay11BadgeContest
