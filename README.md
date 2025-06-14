@@ -163,7 +163,8 @@ Bottom of bulb / thread
 
 #### Method 2 - Pre-compiled Hex File (Quick Start)
 1. **Download and extract:** [firmware.ino.hex.zip](firmware.ino.hex.zip)
-2. **Flash using stm8flash:**
+2. **Obtain stm8flash:** from https://github.com/vdudouyt/stm8flash
+3. **Flash using stm8flash:**
    ```bash
    stm8flash -c stlinkv2 -p stm8s003f3 -w firmware.ino.hex
    ```
@@ -229,6 +230,8 @@ The badge operates in two distinct modes based on touch sensor input:
 ## 🎨 Animation Modes
 
 The badge features 5 distinct animation modes that cycle automatically:
+
+<img src="https://github.com/platima/PCBWay-11th-Design-Contest/blob/main/Images/20250613%20163123%20NoSound%20720p.gif?raw=true" />
 
 ### 1. Rainbow Mode (`MODE_RAINBOW`) - Default
 - **Colors**: Full spectrum rainbow cycling
